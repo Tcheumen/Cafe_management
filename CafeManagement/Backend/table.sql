@@ -11,6 +11,7 @@ create table user(
 
 insert into user(name, contactNumber, email, password, status, role) values ('Admin', '1234567', 'admin@gmail.com', 'admin', 'true', 'admin' );
 
+
 create table product(
     id int NOT NULL AUTO_INCREMENT,
     name varchar(255) NOT NULL,
@@ -18,5 +19,10 @@ create table product(
     description varchar (255),
     price integer,
     status varchar (20),
+
+create table category(
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(255) NOT NULL,
+
     primary key(id)
 );
